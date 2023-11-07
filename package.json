@@ -1,0 +1,14 @@
+{
+  "name": "pair-programming",
+  "version": "1.0.0",
+  "description": "Pair programming initial setup",
+  "main": "index.js",
+  "author": "Teavaro",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
