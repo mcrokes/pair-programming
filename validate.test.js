@@ -8,12 +8,16 @@ describe("validate", () => {
   test("returns true for correct validation object of type string", () => {
     expect(
       validate(
-        {
-          fieldName: "test",
-          callback: (data) => {
-            console.log("data was defined as:", JSON.stringify(data));
+        [
+          {
+            fieldName: "someNumber",
+            fieldType: "number",
           },
-        },
+          {
+            fieldName: "someString",
+            fieldType: "number",
+          },
+        ],
         {
           someNumber: 1,
           someArray: ["test1", "test2"],
