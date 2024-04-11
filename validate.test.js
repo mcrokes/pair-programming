@@ -1,8 +1,8 @@
 const validate = require("./validate");
-const getFunction = require("./index");
+// const getFunction = require("./index");
 
 describe("validate", () => {
-  test("returns false for incorrect validation object", async () => {
+  test("returns false for incorrect validation object", () => {
     expect(validate(null)).toBe(false);
   });
 
@@ -15,8 +15,16 @@ describe("validate", () => {
             fieldType: "number",
           },
           {
+            fieldName: "someArray",
+            fieldType: "object",
+          },
+          {
             fieldName: "someString",
-            fieldType: "number",
+            fieldType: "string",
+          },
+          {
+            fieldName: "potato",
+            fieldType: "string",
           },
         ],
         {
