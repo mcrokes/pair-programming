@@ -22,10 +22,6 @@ describe("validate", () => {
             fieldName: "someString",
             fieldType: "string",
           },
-          {
-            fieldName: "potato",
-            fieldType: "string",
-          },
         ],
         {
           someNumber: 1,
