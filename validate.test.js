@@ -1,7 +1,8 @@
 const validate = require("./validate");
+const getFunction = require("./index");
 
 describe("validate", () => {
-  test("returns false for incorrect validation object", () => {
+  test("returns false for incorrect validation object", async () => {
     expect(validate(null)).toBe(false);
   });
 
